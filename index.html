@@ -26,6 +26,28 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script type="text/javascript"> <!--
+		function UnCryptMailto( s )
+		{
+			var n = 0;
+			var r = "";
+			for( var i = 0; i < s.length; i++)
+			{
+				n = s.charCodeAt( i );
+				if( n >= 8364 )
+				{
+					n = 128;
+				}
+				r += String.fromCharCode( n - 1 );
+			}
+			return r;
+		}
+
+		function linkTo_UnCryptMailto( s )
+		{
+			location.href=UnCryptMailto( s );
+		}
+    // --> </script>
   </head>
 
   <body role="document">
@@ -125,7 +147,8 @@
 		
 		<div class="page-header" id="contact">
 			<h1>contact</h1>
-			<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dG9MNFhnOHBMdy1RdmJnLUpGS2FPQWc6MA" width="760" height="1072" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+			<!--<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dG9MNFhnOHBMdy1RdmJnLUpGS2FPQWc6MA" width="760" height="1072" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
+			<a href="javascript:linkTo_UnCryptMailto('nbjmup;qijmptpvoeAhnbjm/dpn');">philosound [at] gmail [dot] com</a>
 		</div>
 		
 		<!--<div class="page-header">
